@@ -72,13 +72,6 @@
       }
     }
 
-    .article-image {
-      width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.18);
-    }
-
     .flex-two {
       display: flex;
       gap: 12px;
@@ -120,6 +113,26 @@
       margin-top: 40px;
       margin-bottom: 20px;
     }
+
+    /* Button for article 2 */
+    .next-article-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      margin-top: 20px;
+      background: #2563eb;
+      color: white;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(37, 99, 235, 0.35);
+    }
+
+    .next-article-btn:hover {
+      background: #1e4fd4;
+    }
   </style>
 </head>
 
@@ -140,7 +153,7 @@
     <!-- ARTICLE 1 -->
     <div class="grid">
 
-      <!-- Two article images side by side -->
+      <!-- Two article images -->
       <div class="flex-two">
         <img src="Screenshot 2025-11-27 140447.png" alt="Roshd Article Page 1" />
         <img src="Screenshot 2025-11-27 140540.png" alt="Roshd Article Page 2" />
@@ -148,29 +161,35 @@
 
       <div>
         <div class="article-title">
-          Improving Mental Health Through Gut Wellness: The Hidden Power of Microbes and Probiotics
+          Improving Mental Health Through Gut Wellness:  
+          The Hidden Power of Microbes and Probiotics
         </div>
 
         <div class="article-meta">
-          Roshd Educational Magazine – National Persian Publication (~13 million readers)
+          Roshd Educational Magazine – Published: <strong>June 2025</strong>
         </div>
 
         <div class="persian-title">
-          <strong>Original (Persian title):</strong><br>
+          <strong>Original Persian title:</strong><br>
           «گوارش تا سلامت روان – نقش شگفت‌انگیز میکروب‌ها و پروبیوتیک‌ها»
         </div>
 
         <div class="summary">
           <strong>English Summary:</strong><br>
-          This article explores the emerging scientific link between gut microbiota and mental health,
-          explaining how microbial balance, probiotics, and diet influence mood regulation, cognitive
-          performance, and stress response. It summarizes recent global research on gut–brain
-          communication and highlights how accessible dietary and microbial interventions may support
+          This article explores the emerging scientific link between gut microbiota and mental
+          health, explaining how microbial balance, probiotics, and diet influence mood regulation,
+          cognitive performance, and stress response. It summarizes recent global research on
+          gut–brain communication and highlights how accessible microbial interventions may support
           psychological well-being. Written for a nationwide audience, the article translates complex
-          scientific findings into clear, accessible concepts for students and educators.
+          findings into clear and accessible concepts for students and educators.
         </div>
-      </div>
 
+        <!-- BUTTON FOR ARTICLE 2 -->
+        <a href="roshd2.html" class="next-article-btn">
+          📘 View Article 2
+        </a>
+
+      </div>
     </div>
 
     <div class="footer">

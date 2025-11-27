@@ -191,7 +191,7 @@
       text-decoration: underline;
     }
 
-    /* Roshd button */
+    /* Buttons */
     .roshd-button {
       margin-top: 25px;
       display: inline-flex;
@@ -211,12 +211,40 @@
       background: #1e4fd4;
     }
 
+    .cv-button {
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      border: 1px solid #2563eb;
+      background: #ffffff;
+      color: #2563eb;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(37, 99, 235, 0.18);
+    }
+
+    .cv-button:hover {
+      background: #eff6ff;
+    }
+
     .footer {
       text-align: center;
       font-size: 0.8rem;
       color: var(--text-muted);
       margin-top: 50px;
       margin-bottom: 20px;
+    }
+
+    /* simple list styling for interests */
+    .section ul {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      color: #334155;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -287,6 +315,18 @@
       </p>
     </div>
 
+    <!-- RESEARCH INTERESTS -->
+    <div class="section">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Clinically relevant bacterial infections and host–microbe interactions</li>
+        <li>Antimicrobial resistance and novel strategies to prevent or overcome drug resistance</li>
+        <li>Rapid and accessible diagnostics, including molecular and point-of-care methods</li>
+        <li>Nanomedicine and smart delivery systems for anti-infective or immunomodulatory therapies</li>
+        <li>Translational research connecting laboratory findings to patient care and public health</li>
+      </ul>
+    </div>
+
     <!-- EDUCATION -->
     <div class="section">
       <h2>Education</h2>
@@ -330,10 +370,17 @@
         </div>
       </div>
 
-      <!-- ⭐ ROSHD BUTTON -->
+      <!-- ROSHD BUTTON -->
       <a href="roshd.html" class="roshd-button">
         📘 Published Articles in Roshd Educational Magazine (13M readership)
       </a>
+
+      <!-- CV BUTTON -->
+      <div style="margin-top: 18px;">
+        <a href="Alaleh_Valiallahi_CV.pdf" class="cv-button">
+          📄 Download my full CV (PDF)
+        </a>
+      </div>
 
     </div>
 

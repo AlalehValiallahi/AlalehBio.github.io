@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- SEO & Social Preview -->
-  <meta name="description" content="Academic portfolio of Alaleh Valiallahi – prospective PhD student with research experience in microbiology, biotechnology, and molecular biology." />
+  <meta name="description" content="Academic portfolio of Alaleh Valiallahi – prospective PhD student with experience in microbiology, biotechnology, and molecular biology." />
   <meta property="og:title" content="Alaleh Valiallahi – Prospective PhD Student" />
-  <meta property="og:description" content="Research-driven and creative MSc graduate with publications, thesis project, and science communication work." />
+  <meta property="og:description" content="Research-driven and creative MSc graduate with publications, thesis work, and science communication experience." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alalehvaliallahi.github.io" />
   <meta property="og:image" content="https://alalehvaliallahi.github.io/Screenshot%202025-11-27%20131605.png" />
@@ -18,61 +18,56 @@
   <meta name="twitter:image" content="https://alalehvaliallahi.github.io/Screenshot%202025-11-27%20131605.png" />
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Theming with CSS variables per theme */
+    /* THEME VARIABLES */
     body[data-theme="light"] {
       --bg: #f8fafc;
-      --card-bg: rgba(255, 255, 255, 0.78);
+      --card-bg: rgba(255,255,255,0.80);
       --accent: #2563eb;
       --accent-soft: #dbeafe;
       --text-main: #0f172a;
       --text-muted: #64748b;
       --border-soft: #e2e8f0;
-      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.16);
-      --glass-border: rgba(148, 163, 184, 0.4);
+      --shadow-soft: 0 18px 45px rgba(15,23,42,0.18);
+      --glass-border: rgba(148,163,184,0.5);
     }
 
     body[data-theme="dark"] {
       --bg: #020617;
-      --card-bg: rgba(15, 23, 42, 0.88);
+      --card-bg: rgba(15,23,42,0.92);
       --accent: #60a5fa;
       --accent-soft: #1e293b;
       --text-main: #e5e7eb;
       --text-muted: #9ca3af;
       --border-soft: #1f2937;
-      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.8);
-      --glass-border: rgba(30, 64, 175, 0.7);
+      --shadow-soft: 0 18px 45px rgba(15,23,42,0.85);
+      --glass-border: rgba(30,64,175,0.7);
     }
 
     body[data-theme="mint"] {
       --bg: #ecfdf5;
-      --card-bg: rgba(236, 253, 245, 0.88);
+      --card-bg: rgba(236,253,245,0.9);
       --accent: #10b981;
       --accent-soft: #ccfbf1;
       --text-main: #064e3b;
       --text-muted: #047857;
       --border-soft: #a7f3d0;
-      --shadow-soft: 0 18px 45px rgba(16, 185, 129, 0.25);
-      --glass-border: rgba(56, 189, 248, 0.4);
+      --shadow-soft: 0 18px 45px rgba(16,185,129,0.3);
+      --glass-border: rgba(34,197,94,0.5);
     }
 
     body[data-theme="blue"] {
       --bg: #eff6ff;
-      --card-bg: rgba(239, 246, 255, 0.92);
+      --card-bg: rgba(239,246,255,0.9);
       --accent: #1d4ed8;
       --accent-soft: #dbeafe;
       --text-main: #0f172a;
       --text-muted: #475569;
       --border-soft: #bfdbfe;
-      --shadow-soft: 0 18px 45px rgba(30, 64, 175, 0.3);
-      --glass-border: rgba(129, 140, 248, 0.6);
+      --shadow-soft: 0 18px 45px rgba(30,64,175,0.35);
+      --glass-border: rgba(129,140,248,0.6);
     }
 
     body {
@@ -90,19 +85,39 @@
       padding: 16px 20px 32px;
     }
 
-    /* TOP BAR + SECTION NAV */
+    /* TOP BAR + NAV */
     .top-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .section-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .section-nav button {
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: rgba(248,250,252,0.85);
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    .section-nav button:hover {
+      background: var(--accent-soft);
     }
 
     #theme-toggle {
       border: 1px solid var(--border-soft);
-      background: rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.8);
       padding: 6px 11px;
       border-radius: 999px;
       font-size: 0.8rem;
@@ -112,26 +127,6 @@
       gap: 6px;
       color: var(--text-main);
       backdrop-filter: blur(6px);
-    }
-
-    .section-nav {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .section-nav button {
-      border-radius: 999px;
-      border: 1px solid var(--border-soft);
-      background: rgba(248,250,252,0.8);
-      padding: 5px 10px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    .section-nav button:hover {
-      background: var(--accent-soft);
     }
 
     /* HERO */
@@ -155,9 +150,7 @@
       }
     }
 
-    .hero-text {
-      flex: 1.1;
-    }
+    .hero-text { flex: 1.1; }
 
     .hero-name {
       font-size: 2.05rem;
@@ -197,13 +190,8 @@
       margin-bottom: 12px;
     }
 
-    body[data-theme="dark"] .hero-p {
-      color: #cbd5f5;
-    }
-
-    body[data-theme="mint"] .hero-p {
-      color: #065f46;
-    }
+    body[data-theme="dark"] .hero-p { color: #cbd5f5; }
+    body[data-theme="mint"] .hero-p { color: #065f46; }
 
     .highlight-row {
       display: flex;
@@ -222,13 +210,8 @@
       font-weight: 600;
     }
 
-    body[data-theme="dark"] .highlight-pill {
-      color: #bfdbfe;
-    }
-
-    body[data-theme="mint"] .highlight-pill {
-      color: #047857;
-    }
+    body[data-theme="dark"] .highlight-pill { color: #bfdbfe; }
+    body[data-theme="mint"] .highlight-pill { color: #047857; }
 
     .icon-links {
       display: flex;
@@ -254,7 +237,7 @@
 
     .icon-badge:hover {
       transform: translateY(-1px);
-      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+      box-shadow: 0 6px 16px rgba(37,99,235,0.35);
     }
 
     .icon-circle {
@@ -280,8 +263,8 @@
       height: 260px;
       border-radius: 22px;
       object-fit: cover;
-      box-shadow: 0 16px 45px rgba(15, 23, 42, 0.4);
-      border: 3px solid rgba(248, 250, 252, 0.9);
+      box-shadow: 0 16px 45px rgba(15,23,42,0.4);
+      border: 3px solid rgba(248,250,252,0.9);
       transition: transform 0.2s ease;
     }
 
@@ -295,7 +278,7 @@
       background: var(--card-bg);
       padding: 24px;
       border-radius: 18px;
-      box-shadow: 0 14px 40px rgba(15, 23, 42, 0.10);
+      box-shadow: 0 14px 40px rgba(15,23,42,0.08);
       border: 1px solid var(--glass-border);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
@@ -323,13 +306,8 @@
       margin: 0;
     }
 
-    body[data-theme="dark"] .section p {
-      color: #d1d5db;
-    }
-
-    body[data-theme="mint"] .section p {
-      color: #064e3b;
-    }
+    body[data-theme="dark"] .section p { color: #d1d5db; }
+    body[data-theme="mint"] .section p { color: #064e3b; }
 
     .section ul {
       margin: 6px 0 0;
@@ -338,17 +316,10 @@
       color: #334155;
     }
 
-    body[data-theme="dark"] .section ul {
-      color: #d1d5db;
-    }
+    body[data-theme="dark"] .section ul { color: #d1d5db; }
+    body[data-theme="mint"] .section ul { color: #065f46; }
 
-    body[data-theme="mint"] .section ul {
-      color: #065f46;
-    }
-
-    .education-item {
-      margin-bottom: 10px;
-    }
+    .education-item { margin-bottom: 10px; }
 
     .pill {
       display: inline-flex;
@@ -381,12 +352,10 @@
       font-size: 0.78rem;
       text-decoration: none;
       font-weight: 600;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+      box-shadow: 0 4px 12px rgba(37,99,235,0.35);
     }
 
-    .pub-item {
-      margin-bottom: 14px;
-    }
+    .pub-item { margin-bottom: 14px; }
 
     .pub-meta {
       font-size: 0.86rem;
@@ -427,19 +396,19 @@
       text-decoration: none;
       background: linear-gradient(135deg, #2563eb, #4f46e5);
       color: #f9fafb;
-      box-shadow: 0 10px 28px rgba(37, 99, 235, 0.55);
+      box-shadow: 0 10px 28px rgba(37,99,235,0.55);
       border: none;
       position: relative;
       overflow: hidden;
     }
 
-    .roshd-button span.arrow {
+    .roshd-button .arrow {
       font-size: 1rem;
       transform: translateX(0);
       transition: transform 0.15s ease;
     }
 
-    .roshd-button:hover span.arrow {
+    .roshd-button:hover .arrow {
       transform: translateX(2px);
     }
 
@@ -487,14 +456,14 @@
       width: 32px;
       height: 32px;
       border-radius: 999px;
-      background: rgba(15,23,42,0.8);
+      background: rgba(15,23,42,0.9);
       color: #e5e7eb;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.75rem;
       text-decoration: none;
-      box-shadow: 0 8px 18px rgba(15,23,42,0.6);
+      box-shadow: 0 8px 18px rgba(15,23,42,0.7);
     }
 
     body[data-theme="light"] .social-bar a {
@@ -504,12 +473,10 @@
     }
 
     @media (max-width: 700px) {
-      .social-bar {
-        display: none;
-      }
+      .social-bar { display: none; }
     }
 
-    /* FAB Buttons (Back to top & contact) */
+    /* FAB Buttons */
     #back-to-top,
     #contact-fab {
       position: fixed;
@@ -539,13 +506,8 @@
       transform: translateY(0);
     }
 
-    #back-to-top {
-      right: 20px;
-    }
-
-    #contact-fab {
-      right: 70px;
-    }
+    #back-to-top { right: 20px; }
+    #contact-fab { right: 70px; }
 
     #back-to-top:hover,
     #contact-fab:hover {
@@ -566,18 +528,21 @@
       transform: translateY(0);
     }
 
-    /* Small responsiveness */
     @media (max-width: 850px) {
-      .hero {
-        padding: 20px 16px;
-      }
+      .hero { padding: 20px 16px; }
     }
   </style>
 </head>
 
 <body data-theme="light">
+  <!-- Floating Social Bar -->
+  <div class="social-bar">
+    <a href="https://scholar.google.com/citations?user=L6U-OsQAAAAJ&hl=en" target="_blank" title="Google Scholar">GS</a>
+    <a href="https://www.linkedin.com/in/alaleh-v-971b29b6/" target="_blank" title="LinkedIn">in</a>
+    <a href="Alaleh_Valiallahi_CV.pdf" target="_blank" title="CV">CV</a>
+  </div>
+
   <div class="container">
-    <!-- Top bar with theme + nav -->
     <div class="top-bar">
       <div class="section-nav">
         <button data-target="top">Top</button>
@@ -617,32 +582,17 @@
         </div>
 
         <div class="icon-links">
-          <a
-            class="icon-badge"
-            href="https://scholar.google.com/citations?user=L6U-OsQAAAAJ&hl=en"
-            target="_blank"
-          >
-            <span class="icon-circle">GS</span>
-            <span>Google Scholar</span>
+          <a class="icon-badge" href="https://scholar.google.com/citations?user=L6U-OsQAAAAJ&hl=en" target="_blank">
+            <span class="icon-circle">GS</span><span>Google Scholar</span>
           </a>
-
-          <a
-            class="icon-badge"
-            href="https://www.linkedin.com/in/alaleh-v-971b29b6/"
-            target="_blank"
-          >
-            <span class="icon-circle">in</span>
-            <span>LinkedIn</span>
+          <a class="icon-badge" href="https://www.linkedin.com/in/alaleh-v-971b29b6/" target="_blank">
+            <span class="icon-circle">in</span><span>LinkedIn</span>
           </a>
         </div>
       </div>
 
       <div class="hero-img-wrap">
-        <img
-          src="Screenshot 2025-11-27 131605.png"
-          alt="Colorful microbiology plates"
-          class="hero-img"
-        />
+        <img src="Screenshot 2025-11-27 131605.png" alt="Colorful microbiology plates" class="hero-img" />
       </div>
     </div>
 
@@ -677,14 +627,12 @@
     <!-- EDUCATION -->
     <div id="education" class="section aos">
       <h2>Education</h2>
-
       <div class="education-item" style="display:flex; align-items:center; flex-wrap:wrap; gap:10px;">
         <strong>M.Sc. in Biotechnology</strong>
         <span class="pill">GPA: 16.97 / 20 (≈3.7 / 4)</span>
         <span class="pill">Graduated with excellent standing</span>
         <a href="thesis.html" class="thesis-chip">🔬 Thesis Project</a>
       </div>
-
       <div class="education-item">
         <strong>B.Sc. in Cellular &amp; Molecular Biology – Microbiology</strong>
         <span class="pill">GPA: 16.43 / 20 (≈3.6 / 4)</span>
@@ -720,4 +668,128 @@
       </div>
 
       <div class="pub-item">
-        <strong>Rapid Detection
+        <strong>Rapid Detection of <em>E. coli</em> O157:H7 Using Multiplex PCR</strong>
+        <div class="pub-meta">
+          Chulalongkorn Medical Journal, 2022
+        </div>
+        <div class="pub-link">
+          <a href="https://www.researchgate.net/publication/366030059" target="_blank">
+            View article
+          </a>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <a href="roshd.html" class="roshd-button">
+          📘 Roshd Magazine Science Articles <span class="arrow">→</span>
+        </a>
+        <a href="Alaleh_Valiallahi_CV.pdf" class="cv-button">
+          📄 Download my full CV
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      Last updated: 2025 · Academic portfolio for PhD applications.
+      <span id="visit-counter"></span>
+    </div>
+  </div>
+
+  <!-- FAB Buttons -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <button id="contact-fab" aria-label="Contact by email">✉</button>
+
+  <script>
+    (function () {
+      const body = document.body;
+      const themeBtn = document.getElementById('theme-toggle');
+      const themes = ['light','dark','mint','blue'];
+
+      function setTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        localStorage.setItem('av_theme', theme);
+        const label =
+          theme === 'light' ? '☀ Theme: Light' :
+          theme === 'dark'  ? '🌙 Theme: Dark'  :
+          theme === 'mint'  ? '🌿 Theme: Mint'  :
+                              '🫐 Theme: Blue';
+        themeBtn.textContent = label;
+      }
+
+      const savedTheme = localStorage.getItem('av_theme');
+      if (themes.includes(savedTheme)) setTheme(savedTheme);
+      else setTheme('light');
+
+      themeBtn.addEventListener('click', () => {
+        const current = body.getAttribute('data-theme') || 'light';
+        const idx = themes.indexOf(current);
+        const next = themes[(idx + 1) % themes.length];
+        setTheme(next);
+      });
+
+      // Section nav
+      document.querySelectorAll('.section-nav button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.getAttribute('data-target');
+          const el = document.getElementById(id);
+          if (el) el.scrollIntoView({behavior:'smooth'});
+          if (id === 'top') window.scrollTo({top:0, behavior:'smooth'});
+        });
+      });
+
+      // Dynamic greeting
+      const g = document.getElementById('greeting');
+      const hour = new Date().getHours();
+      let text = 'Welcome to my academic page.';
+      if (hour >= 5 && hour < 12) text = 'Good morning, thanks for visiting my academic page.';
+      else if (hour >= 12 && hour < 18) text = 'Good afternoon, thanks for visiting my academic page.';
+      else text = 'Good evening, thanks for taking the time to visit my academic page.';
+      g.textContent = text;
+
+      // Mini analytics (local per browser)
+      const counterEl = document.getElementById('visit-counter');
+      let count = parseInt(localStorage.getItem('av_site_visits') || '0', 10);
+      count += 1;
+      localStorage.setItem('av_site_visits', String(count));
+      counterEl.textContent = '· Visits from this browser: ' + count;
+
+      // Back-to-top & contact FAB
+      const backTop = document.getElementById('back-to-top');
+      const contactFab = document.getElementById('contact-fab');
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        if (y > 300) {
+          backTop.classList.add('visible');
+          contactFab.classList.add('visible');
+        } else {
+          backTop.classList.remove('visible');
+          contactFab.classList.remove('visible');
+        }
+      });
+      backTop.addEventListener('click', () => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+      contactFab.addEventListener('click', () => {
+        window.location.href = 'mailto:avaliallahi92@gmail.com';
+      });
+
+      // AOS (animation on scroll)
+      const aosEls = document.querySelectorAll('.aos');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('aos-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      aosEls.forEach(el => observer.observe(el));
+
+      // Auto highlight DOI links
+      document.querySelectorAll('a[href*="doi.org"]').forEach(a => {
+        a.classList.add('doi-link');
+      });
+    })();
+  </script>
+</body>
+</html>

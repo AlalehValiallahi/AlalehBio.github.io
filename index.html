@@ -165,13 +165,6 @@
       margin-bottom: 4px;
     }
 
-    .hero-greeting {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-      font-style: italic;
-    }
-
     .contact-row {
       font-size: 0.93rem;
       margin-bottom: 10px;
@@ -368,7 +361,6 @@
       text-decoration: none;
     }
 
-    /* DOI highlight */
     a.doi-link {
       border-bottom: 1px dashed var(--accent);
       padding-bottom: 1px;
@@ -433,7 +425,6 @@
       margin-top: 32px;
     }
 
-    /* Floating Social Bar */
     .social-bar {
       position: fixed;
       top: 50%;
@@ -469,7 +460,6 @@
       .social-bar { display: none; }
     }
 
-    /* FAB Buttons */
     #back-to-top,
     #contact-fab {
       position: fixed;
@@ -509,7 +499,6 @@
       transform: translateY(-2px);
     }
 
-    /* AOS */
     .aos {
       opacity: 0;
       transform: translateY(18px);
@@ -552,7 +541,7 @@
       <div class="hero-text">
         <div class="hero-name">Alaleh Valiallahi</div>
         <div class="hero-title">
-          Prospective PhD Student · Molecular Microbiology, Host–Pathogen Interactions &amp; Translational Biotechnology
+          Prospective PhD Student · Molecular Microbiology &amp; Translational Biotechnology
         </div>
 
         <div class="contact-row">
@@ -561,16 +550,14 @@
           &nbsp;·&nbsp; Based in Tehran, Iran
         </div>
 
+        <!-- کوتاه و نتیجه‌محور -->
         <p class="hero-p">
-          I am an ambitious and research-driven molecular biologist with multi-year experience in pathogen 
-          diagnostics, molecular assay development, and host–microbe systems. My work spans molecular biology, 
-          microbial genetics, nanobiotechnology, and translational infection biology. I am especially motivated 
-          by projects that combine molecular engineering with mechanistic understanding of pathogen adaptation. 
-          I rapidly master new techniques and have independently led experimental workflows, validated assays, 
-          and contributed to high-impact publications.
+          Molecular biologist with 6+ years of wet-lab experience in pathogen diagnostics, assay development, 
+          and antimicrobial resistance. I design and optimize PCR/LAMP/qPCR workflows, standardize protocols 
+          used by our lab, and turn them into peer-reviewed publications. Now seeking a PhD position to bring 
+          this experience into advanced host–pathogen and genome-engineering projects.
         </p>
 
-        <!-- icons in hero -->
         <div class="icon-links">
           <a class="icon-badge" href="https://scholar.google.com/citations?user=L6U-OsQAAAAJ&hl=en" target="_blank">
             <span class="icon-circle">GS</span><span>Google Scholar</span>
@@ -589,37 +576,22 @@
     <!-- ABOUT -->
     <div id="about" class="section aos">
       <h2>About Me</h2>
-      <p class="hero-title" style="margin-bottom:6px;">Curious, research-driven, and creative</p>
+      <p class="hero-title" style="margin-bottom:6px;">Curious, research-driven, and technically focused</p>
 
+      <!-- یک پاراگراف خیلی کوتاه -->
       <p>
-        I am a molecular biologist with strong expertise in experimental design, bacterial pathogen detection,
-        molecular diagnostics, and data-driven interpretation of host–pathogen systems. My research experience
-        includes developing sensitive molecular assays (PCR, LAMP, qPCR), optimizing diagnostic pipelines,
-        performing molecular cloning, and contributing to nanoparticle-based therapeutic strategies for
-        multidrug-resistant bacteria.
+        I work at the interface of molecular biology, microbial genetics, and nanobiotechnology, with a focus 
+        on building reliable tools for detecting and combating pathogenic bacteria.
       </p>
 
-      <p>
-        I thrive in research environments that integrate molecular engineering with mechanistic microbiology.
-        Throughout my M.Sc. and subsequent research positions, I independently executed complex workflows,
-        standardized protocols adopted across my lab, supervised junior researchers, and contributed to multiple
-        peer-reviewed publications. My ability to rapidly learn and adapt has enabled me to move across molecular
-        diagnostics, gene-level analysis, bacterial evolution studies, and nanobiotechnology.
-      </p>
-
-      <p style="margin-top:10px; font-size:0.9rem; color:var(--text-muted);">
-        I aim to join a rigorous PhD program where I can contribute to high-impact molecular microbiology and
-        infection biology research, expanding into advanced genome engineering and host–microbe interaction studies.
-        I am happy to share additional documents, transcripts, or references upon request.
-      </p>
-
-      <!-- highlight pills under About -->
-      <div class="highlight-row">
-        <span class="highlight-pill">Top-ranked M.Sc. student (excellent standing)</span>
-        <span class="highlight-pill">NCBI gene record contributor</span>
-        <span class="highlight-pill">First-author Q2 journal review</span>
-        <span class="highlight-pill">Science communication for 13M+ readers</span>
-      </div>
+      <!-- اسنپ‌شات بولتی، سریع و حرفه‌ای -->
+      <ul style="margin-top:10px;">
+        <li><strong>Publications:</strong> 3 peer-reviewed papers (first-author Q2 review in <em>Current Medicinal Chemistry</em>), plus a conference paper on nanoparticle-based therapeutics.</li>
+        <li><strong>Assay development:</strong> Designed and optimized PCR, multiplex PCR, qPCR, and LAMP workflows for rapid detection of <em>E. coli</em> O157:H7 and other pathogens.</li>
+        <li><strong>Genetic work:</strong> Molecular cloning, plasmid prep, construct design, primer design, and gene annotation; registered a virulence-gene sequence in NCBI GenBank.</li>
+        <li><strong>Lab leadership:</strong> Standardized protocols adopted across my lab, supervised junior students, and served as teaching assistant for molecular biology and microbiology courses.</li>
+        <li><strong>Direction:</strong> Ready to extend this foundation to advanced genome engineering, host–microbe interaction studies, and mechanistic infection biology in a PhD program.</li>
+      </ul>
     </div>
 
     <!-- RESEARCH INTERESTS -->
@@ -689,7 +661,6 @@
         </div>
       </div>
 
-      <!-- Conference paper -->
       <div class="pub-item">
         <strong>Chitosan Nanoparticle-Based Therapeutics for MDR Bacteria</strong>
         <div class="pub-meta">
@@ -759,7 +730,7 @@
         });
       });
 
-      // Back-to-top & contact FAB
+      // FABs
       const backTop = document.getElementById('back-to-top');
       const contactFab = document.getElementById('contact-fab');
       window.addEventListener('scroll', () => {
@@ -779,7 +750,7 @@
         window.location.href = 'mailto:avaliallahi92@gmail.com';
       });
 
-      // AOS (animation on scroll)
+      // AOS
       const aosEls = document.querySelectorAll('.aos');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -791,7 +762,7 @@
       }, { threshold: 0.15 });
       aosEls.forEach(el => observer.observe(el));
 
-      // Auto highlight DOI links
+      // Highlight DOI links
       document.querySelectorAll('a[href*="doi.org"]').forEach(a => {
         a.classList.add('doi-link');
       });
